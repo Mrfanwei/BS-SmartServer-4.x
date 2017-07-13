@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="auth" />
+        <module name="BS-SmartServer-4X" />
+        <module name="client" />
+        <module name="gate" />
+        <module name="logic" />
+        <module name="protobuf" />
+        <module name="thirdparty" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auth" target="1.8" />
+      <module name="BS-SmartServer-4X" target="1.5" />
+      <module name="client" target="1.8" />
+      <module name="gate" target="1.8" />
+      <module name="logic" target="1.8" />
+      <module name="protobuf" target="1.8" />
+      <module name="smartlife" target="1.8" />
+      <module name="thirdparty" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
