@@ -109,12 +109,12 @@ public class    AuthStarter {
             printHelpMessage();
             System.exit(0);
         }
-        if( commandLine.hasOption('l') ) {
-            log = new File(commandLine.getOptionValue('l'));
-        } else {
-            printHelpMessage();
-            System.exit(0);
-        }
+//        if( commandLine.hasOption('l') ) {
+//            log = new File(commandLine.getOptionValue('l'));
+//        } else {
+//            printHelpMessage();
+//            System.exit(0);
+//        }
     }
 
     static void printHelpMessage() {
