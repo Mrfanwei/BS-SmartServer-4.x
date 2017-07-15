@@ -28,7 +28,7 @@ public class Client {
     }
 
     public static void beginPressTest() throws InterruptedException {
-    EventLoopGroup group = new NioEventLoopGroup();
+        EventLoopGroup group = new NioEventLoopGroup();
         Bootstrap b = new Bootstrap();
         b.group(group)
                 .channel(NioSocketChannel.class)
@@ -45,10 +45,10 @@ public class Client {
                 });
 
         // Start the client.
-        for(int i = 1; i <= clientNum; i++) {
-            startConnection(b, i);
-        }
-
+//        for(int i = 1; i <= clientNum; i++) {
+//            startConnection(b, i);
+//        }
+        startConnection(b, 1);
     }
 
     private static void startConnection(Bootstrap b, int index) {

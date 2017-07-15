@@ -19,7 +19,7 @@ public final class Auth {
     /**
      * <code>required string userid = 1;</code>
      */
-    String getUserid();
+    java.lang.String getUserid();
     /**
      * <code>required string userid = 1;</code>
      */
@@ -34,7 +34,7 @@ public final class Auth {
     /**
      * <code>required string passwd = 2;</code>
      */
-    String getPasswd();
+    java.lang.String getPasswd();
     /**
      * <code>required string passwd = 2;</code>
      */
@@ -64,7 +64,7 @@ public final class Auth {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -136,7 +136,7 @@ public final class Auth {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<CRegister> getParserForType() {
       return PARSER;
     }
@@ -144,7 +144,7 @@ public final class Auth {
     private int bitField0_;
     // required string userid = 1;
     public static final int USERID_FIELD_NUMBER = 1;
-    private Object userid_;
+    private java.lang.Object userid_;
     /**
      * <code>required string userid = 1;</code>
      */
@@ -154,14 +154,14 @@ public final class Auth {
     /**
      * <code>required string userid = 1;</code>
      */
-    public String getUserid() {
-      Object ref = userid_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUserid() {
+      java.lang.Object ref = userid_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
+        com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           userid_ = s;
         }
@@ -173,11 +173,11 @@ public final class Auth {
      */
     public com.google.protobuf.ByteString
         getUseridBytes() {
-      Object ref = userid_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
+      java.lang.Object ref = userid_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         userid_ = b;
         return b;
       } else {
@@ -187,7 +187,7 @@ public final class Auth {
 
     // required string passwd = 2;
     public static final int PASSWD_FIELD_NUMBER = 2;
-    private Object passwd_;
+    private java.lang.Object passwd_;
     /**
      * <code>required string passwd = 2;</code>
      */
@@ -197,14 +197,14 @@ public final class Auth {
     /**
      * <code>required string passwd = 2;</code>
      */
-    public String getPasswd() {
-      Object ref = passwd_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getPasswd() {
+      java.lang.Object ref = passwd_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
+        com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           passwd_ = s;
         }
@@ -216,11 +216,11 @@ public final class Auth {
      */
     public com.google.protobuf.ByteString
         getPasswdBytes() {
-      Object ref = passwd_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
+      java.lang.Object ref = passwd_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         passwd_ = b;
         return b;
       } else {
@@ -281,8 +281,8 @@ public final class Auth {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
@@ -347,7 +347,7 @@ public final class Auth {
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -463,11 +463,11 @@ public final class Auth {
 
       public final boolean isInitialized() {
         if (!hasUserid()) {
-
+          
           return false;
         }
         if (!hasPasswd()) {
-
+          
           return false;
         }
         return true;
@@ -493,7 +493,7 @@ public final class Auth {
       private int bitField0_;
 
       // required string userid = 1;
-      private Object userid_ = "";
+      private java.lang.Object userid_ = "";
       /**
        * <code>required string userid = 1;</code>
        */
@@ -503,15 +503,15 @@ public final class Auth {
       /**
        * <code>required string userid = 1;</code>
        */
-      public String getUserid() {
-        Object ref = userid_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref)
+      public java.lang.String getUserid() {
+        java.lang.Object ref = userid_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
               .toStringUtf8();
           userid_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -519,11 +519,11 @@ public final class Auth {
        */
       public com.google.protobuf.ByteString
           getUseridBytes() {
-        Object ref = userid_;
+        java.lang.Object ref = userid_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           userid_ = b;
           return b;
         } else {
@@ -534,7 +534,7 @@ public final class Auth {
        * <code>required string userid = 1;</code>
        */
       public Builder setUserid(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -567,7 +567,7 @@ public final class Auth {
       }
 
       // required string passwd = 2;
-      private Object passwd_ = "";
+      private java.lang.Object passwd_ = "";
       /**
        * <code>required string passwd = 2;</code>
        */
@@ -577,15 +577,15 @@ public final class Auth {
       /**
        * <code>required string passwd = 2;</code>
        */
-      public String getPasswd() {
-        Object ref = passwd_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref)
+      public java.lang.String getPasswd() {
+        java.lang.Object ref = passwd_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
               .toStringUtf8();
           passwd_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -593,11 +593,11 @@ public final class Auth {
        */
       public com.google.protobuf.ByteString
           getPasswdBytes() {
-        Object ref = passwd_;
+        java.lang.Object ref = passwd_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           passwd_ = b;
           return b;
         } else {
@@ -608,7 +608,7 @@ public final class Auth {
        * <code>required string passwd = 2;</code>
        */
       public Builder setPasswd(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -670,7 +670,7 @@ public final class Auth {
      * 用户账户id
      * </pre>
      */
-    String getUserid();
+    java.lang.String getUserid();
     /**
      * <code>required string userid = 1;</code>
      *
@@ -697,7 +697,7 @@ public final class Auth {
      * 用户密码
      * </pre>
      */
-    String getPasswd();
+    java.lang.String getPasswd();
     /**
      * <code>required string passwd = 2;</code>
      *
@@ -724,7 +724,7 @@ public final class Auth {
      * 客户端平台:android,ios,web
      * </pre>
      */
-    String getPlatform();
+    java.lang.String getPlatform();
     /**
      * <code>optional string platform = 3;</code>
      *
@@ -751,7 +751,7 @@ public final class Auth {
      * APP版本号
      * </pre>
      */
-    String getAppVersion();
+    java.lang.String getAppVersion();
     /**
      * <code>optional string app_version = 4;</code>
      *
@@ -785,7 +785,7 @@ public final class Auth {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -867,7 +867,7 @@ public final class Auth {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<CLogin> getParserForType() {
       return PARSER;
     }
@@ -875,7 +875,7 @@ public final class Auth {
     private int bitField0_;
     // required string userid = 1;
     public static final int USERID_FIELD_NUMBER = 1;
-    private Object userid_;
+    private java.lang.Object userid_;
     /**
      * <code>required string userid = 1;</code>
      *
@@ -893,14 +893,14 @@ public final class Auth {
      * 用户账户id
      * </pre>
      */
-    public String getUserid() {
-      Object ref = userid_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUserid() {
+      java.lang.Object ref = userid_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
+        com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           userid_ = s;
         }
@@ -916,11 +916,11 @@ public final class Auth {
      */
     public com.google.protobuf.ByteString
         getUseridBytes() {
-      Object ref = userid_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
+      java.lang.Object ref = userid_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         userid_ = b;
         return b;
       } else {
@@ -930,7 +930,7 @@ public final class Auth {
 
     // required string passwd = 2;
     public static final int PASSWD_FIELD_NUMBER = 2;
-    private Object passwd_;
+    private java.lang.Object passwd_;
     /**
      * <code>required string passwd = 2;</code>
      *
@@ -948,14 +948,14 @@ public final class Auth {
      * 用户密码
      * </pre>
      */
-    public String getPasswd() {
-      Object ref = passwd_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getPasswd() {
+      java.lang.Object ref = passwd_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
+        com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           passwd_ = s;
         }
@@ -971,11 +971,11 @@ public final class Auth {
      */
     public com.google.protobuf.ByteString
         getPasswdBytes() {
-      Object ref = passwd_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
+      java.lang.Object ref = passwd_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         passwd_ = b;
         return b;
       } else {
@@ -985,7 +985,7 @@ public final class Auth {
 
     // optional string platform = 3;
     public static final int PLATFORM_FIELD_NUMBER = 3;
-    private Object platform_;
+    private java.lang.Object platform_;
     /**
      * <code>optional string platform = 3;</code>
      *
@@ -1003,14 +1003,14 @@ public final class Auth {
      * 客户端平台:android,ios,web
      * </pre>
      */
-    public String getPlatform() {
-      Object ref = platform_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getPlatform() {
+      java.lang.Object ref = platform_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
+        com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           platform_ = s;
         }
@@ -1026,11 +1026,11 @@ public final class Auth {
      */
     public com.google.protobuf.ByteString
         getPlatformBytes() {
-      Object ref = platform_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
+      java.lang.Object ref = platform_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         platform_ = b;
         return b;
       } else {
@@ -1040,7 +1040,7 @@ public final class Auth {
 
     // optional string app_version = 4;
     public static final int APP_VERSION_FIELD_NUMBER = 4;
-    private Object appVersion_;
+    private java.lang.Object appVersion_;
     /**
      * <code>optional string app_version = 4;</code>
      *
@@ -1058,14 +1058,14 @@ public final class Auth {
      * APP版本号
      * </pre>
      */
-    public String getAppVersion() {
-      Object ref = appVersion_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getAppVersion() {
+      java.lang.Object ref = appVersion_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
+        com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           appVersion_ = s;
         }
@@ -1081,11 +1081,11 @@ public final class Auth {
      */
     public com.google.protobuf.ByteString
         getAppVersionBytes() {
-      Object ref = appVersion_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
+      java.lang.Object ref = appVersion_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         appVersion_ = b;
         return b;
       } else {
@@ -1162,8 +1162,8 @@ public final class Auth {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
@@ -1228,7 +1228,7 @@ public final class Auth {
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -1366,11 +1366,11 @@ public final class Auth {
 
       public final boolean isInitialized() {
         if (!hasUserid()) {
-
+          
           return false;
         }
         if (!hasPasswd()) {
-
+          
           return false;
         }
         return true;
@@ -1396,7 +1396,7 @@ public final class Auth {
       private int bitField0_;
 
       // required string userid = 1;
-      private Object userid_ = "";
+      private java.lang.Object userid_ = "";
       /**
        * <code>required string userid = 1;</code>
        *
@@ -1414,15 +1414,15 @@ public final class Auth {
        * 用户账户id
        * </pre>
        */
-      public String getUserid() {
-        Object ref = userid_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref)
+      public java.lang.String getUserid() {
+        java.lang.Object ref = userid_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
               .toStringUtf8();
           userid_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -1434,11 +1434,11 @@ public final class Auth {
        */
       public com.google.protobuf.ByteString
           getUseridBytes() {
-        Object ref = userid_;
+        java.lang.Object ref = userid_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           userid_ = b;
           return b;
         } else {
@@ -1453,7 +1453,7 @@ public final class Auth {
        * </pre>
        */
       public Builder setUserid(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1494,7 +1494,7 @@ public final class Auth {
       }
 
       // required string passwd = 2;
-      private Object passwd_ = "";
+      private java.lang.Object passwd_ = "";
       /**
        * <code>required string passwd = 2;</code>
        *
@@ -1512,15 +1512,15 @@ public final class Auth {
        * 用户密码
        * </pre>
        */
-      public String getPasswd() {
-        Object ref = passwd_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref)
+      public java.lang.String getPasswd() {
+        java.lang.Object ref = passwd_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
               .toStringUtf8();
           passwd_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -1532,11 +1532,11 @@ public final class Auth {
        */
       public com.google.protobuf.ByteString
           getPasswdBytes() {
-        Object ref = passwd_;
+        java.lang.Object ref = passwd_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           passwd_ = b;
           return b;
         } else {
@@ -1551,7 +1551,7 @@ public final class Auth {
        * </pre>
        */
       public Builder setPasswd(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1592,7 +1592,7 @@ public final class Auth {
       }
 
       // optional string platform = 3;
-      private Object platform_ = "";
+      private java.lang.Object platform_ = "";
       /**
        * <code>optional string platform = 3;</code>
        *
@@ -1610,15 +1610,15 @@ public final class Auth {
        * 客户端平台:android,ios,web
        * </pre>
        */
-      public String getPlatform() {
-        Object ref = platform_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref)
+      public java.lang.String getPlatform() {
+        java.lang.Object ref = platform_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
               .toStringUtf8();
           platform_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -1630,11 +1630,11 @@ public final class Auth {
        */
       public com.google.protobuf.ByteString
           getPlatformBytes() {
-        Object ref = platform_;
+        java.lang.Object ref = platform_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           platform_ = b;
           return b;
         } else {
@@ -1649,7 +1649,7 @@ public final class Auth {
        * </pre>
        */
       public Builder setPlatform(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1690,7 +1690,7 @@ public final class Auth {
       }
 
       // optional string app_version = 4;
-      private Object appVersion_ = "";
+      private java.lang.Object appVersion_ = "";
       /**
        * <code>optional string app_version = 4;</code>
        *
@@ -1708,15 +1708,15 @@ public final class Auth {
        * APP版本号
        * </pre>
        */
-      public String getAppVersion() {
-        Object ref = appVersion_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref)
+      public java.lang.String getAppVersion() {
+        java.lang.Object ref = appVersion_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
               .toStringUtf8();
           appVersion_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -1728,11 +1728,11 @@ public final class Auth {
        */
       public com.google.protobuf.ByteString
           getAppVersionBytes() {
-        Object ref = appVersion_;
+        java.lang.Object ref = appVersion_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           appVersion_ = b;
           return b;
         } else {
@@ -1747,7 +1747,7 @@ public final class Auth {
        * </pre>
        */
       public Builder setAppVersion(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1835,7 +1835,7 @@ public final class Auth {
      *描述
      * </pre>
      */
-    String getDesc();
+    java.lang.String getDesc();
     /**
      * <code>required string desc = 2;</code>
      *
@@ -1877,7 +1877,7 @@ public final class Auth {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -1949,7 +1949,7 @@ public final class Auth {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<SResponse> getParserForType() {
       return PARSER;
     }
@@ -1981,7 +1981,7 @@ public final class Auth {
 
     // required string desc = 2;
     public static final int DESC_FIELD_NUMBER = 2;
-    private Object desc_;
+    private java.lang.Object desc_;
     /**
      * <code>required string desc = 2;</code>
      *
@@ -1999,14 +1999,14 @@ public final class Auth {
      *描述
      * </pre>
      */
-    public String getDesc() {
-      Object ref = desc_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getDesc() {
+      java.lang.Object ref = desc_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
+        com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           desc_ = s;
         }
@@ -2022,11 +2022,11 @@ public final class Auth {
      */
     public com.google.protobuf.ByteString
         getDescBytes() {
-      Object ref = desc_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
+      java.lang.Object ref = desc_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         desc_ = b;
         return b;
       } else {
@@ -2087,8 +2087,8 @@ public final class Auth {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
@@ -2153,7 +2153,7 @@ public final class Auth {
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -2275,11 +2275,11 @@ public final class Auth {
 
       public final boolean isInitialized() {
         if (!hasCode()) {
-
+          
           return false;
         }
         if (!hasDesc()) {
-
+          
           return false;
         }
         return true;
@@ -2354,7 +2354,7 @@ public final class Auth {
       }
 
       // required string desc = 2;
-      private Object desc_ = "";
+      private java.lang.Object desc_ = "";
       /**
        * <code>required string desc = 2;</code>
        *
@@ -2372,15 +2372,15 @@ public final class Auth {
        *描述
        * </pre>
        */
-      public String getDesc() {
-        Object ref = desc_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref)
+      public java.lang.String getDesc() {
+        java.lang.Object ref = desc_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
               .toStringUtf8();
           desc_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -2392,11 +2392,11 @@ public final class Auth {
        */
       public com.google.protobuf.ByteString
           getDescBytes() {
-        Object ref = desc_;
+        java.lang.Object ref = desc_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           desc_ = b;
           return b;
         } else {
@@ -2411,7 +2411,7 @@ public final class Auth {
        * </pre>
        */
       public Builder setDesc(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -2485,7 +2485,7 @@ public final class Auth {
   private static com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\023cli_def/login.proto\"+\n\tCRegister\022\016\n\006us" +
       "erid\030\001 \002(\t\022\016\n\006passwd\030\002 \002(\t\"O\n\006CLogin\022\016\n\006" +
       "userid\030\001 \002(\t\022\016\n\006passwd\030\002 \002(\t\022\020\n\010platform" +
@@ -2503,19 +2503,19 @@ public final class Auth {
           internal_static_CRegister_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_CRegister_descriptor,
-              new String[] { "Userid", "Passwd", });
+              new java.lang.String[] { "Userid", "Passwd", });
           internal_static_CLogin_descriptor =
             getDescriptor().getMessageTypes().get(1);
           internal_static_CLogin_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_CLogin_descriptor,
-              new String[] { "Userid", "Passwd", "Platform", "AppVersion", });
+              new java.lang.String[] { "Userid", "Passwd", "Platform", "AppVersion", });
           internal_static_SResponse_descriptor =
             getDescriptor().getMessageTypes().get(2);
           internal_static_SResponse_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_SResponse_descriptor,
-              new String[] { "Code", "Desc", });
+              new java.lang.String[] { "Code", "Desc", });
           return null;
         }
       };

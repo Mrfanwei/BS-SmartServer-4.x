@@ -27,7 +27,7 @@ public final class Chat {
      *发送消息者的userid
      * </pre>
      */
-    String getSelf();
+    java.lang.String getSelf();
     /**
      * <code>required string self = 1;</code>
      *
@@ -54,7 +54,7 @@ public final class Chat {
      *消息目标的userid
      * </pre>
      */
-    String getDest();
+    java.lang.String getDest();
     /**
      * <code>required string dest = 2;</code>
      *
@@ -81,7 +81,7 @@ public final class Chat {
      *消息内容
      * </pre>
      */
-    String getContent();
+    java.lang.String getContent();
     /**
      * <code>required string content = 3;</code>
      *
@@ -115,7 +115,7 @@ public final class Chat {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -192,7 +192,7 @@ public final class Chat {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<CPrivateChat> getParserForType() {
       return PARSER;
     }
@@ -200,7 +200,7 @@ public final class Chat {
     private int bitField0_;
     // required string self = 1;
     public static final int SELF_FIELD_NUMBER = 1;
-    private Object self_;
+    private java.lang.Object self_;
     /**
      * <code>required string self = 1;</code>
      *
@@ -218,14 +218,14 @@ public final class Chat {
      *发送消息者的userid
      * </pre>
      */
-    public String getSelf() {
-      Object ref = self_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getSelf() {
+      java.lang.Object ref = self_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
+        com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           self_ = s;
         }
@@ -241,11 +241,11 @@ public final class Chat {
      */
     public com.google.protobuf.ByteString
         getSelfBytes() {
-      Object ref = self_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
+      java.lang.Object ref = self_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         self_ = b;
         return b;
       } else {
@@ -255,7 +255,7 @@ public final class Chat {
 
     // required string dest = 2;
     public static final int DEST_FIELD_NUMBER = 2;
-    private Object dest_;
+    private java.lang.Object dest_;
     /**
      * <code>required string dest = 2;</code>
      *
@@ -273,14 +273,14 @@ public final class Chat {
      *消息目标的userid
      * </pre>
      */
-    public String getDest() {
-      Object ref = dest_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getDest() {
+      java.lang.Object ref = dest_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
+        com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           dest_ = s;
         }
@@ -296,11 +296,11 @@ public final class Chat {
      */
     public com.google.protobuf.ByteString
         getDestBytes() {
-      Object ref = dest_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
+      java.lang.Object ref = dest_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         dest_ = b;
         return b;
       } else {
@@ -310,7 +310,7 @@ public final class Chat {
 
     // required string content = 3;
     public static final int CONTENT_FIELD_NUMBER = 3;
-    private Object content_;
+    private java.lang.Object content_;
     /**
      * <code>required string content = 3;</code>
      *
@@ -328,14 +328,14 @@ public final class Chat {
      *消息内容
      * </pre>
      */
-    public String getContent() {
-      Object ref = content_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getContent() {
+      java.lang.Object ref = content_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
+        com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           content_ = s;
         }
@@ -351,11 +351,11 @@ public final class Chat {
      */
     public com.google.protobuf.ByteString
         getContentBytes() {
-      Object ref = content_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
+      java.lang.Object ref = content_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         content_ = b;
         return b;
       } else {
@@ -428,8 +428,8 @@ public final class Chat {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
@@ -494,7 +494,7 @@ public final class Chat {
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -621,15 +621,15 @@ public final class Chat {
 
       public final boolean isInitialized() {
         if (!hasSelf()) {
-
+          
           return false;
         }
         if (!hasDest()) {
-
+          
           return false;
         }
         if (!hasContent()) {
-
+          
           return false;
         }
         return true;
@@ -655,7 +655,7 @@ public final class Chat {
       private int bitField0_;
 
       // required string self = 1;
-      private Object self_ = "";
+      private java.lang.Object self_ = "";
       /**
        * <code>required string self = 1;</code>
        *
@@ -673,15 +673,15 @@ public final class Chat {
        *发送消息者的userid
        * </pre>
        */
-      public String getSelf() {
-        Object ref = self_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref)
+      public java.lang.String getSelf() {
+        java.lang.Object ref = self_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
               .toStringUtf8();
           self_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -693,11 +693,11 @@ public final class Chat {
        */
       public com.google.protobuf.ByteString
           getSelfBytes() {
-        Object ref = self_;
+        java.lang.Object ref = self_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           self_ = b;
           return b;
         } else {
@@ -712,7 +712,7 @@ public final class Chat {
        * </pre>
        */
       public Builder setSelf(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -753,7 +753,7 @@ public final class Chat {
       }
 
       // required string dest = 2;
-      private Object dest_ = "";
+      private java.lang.Object dest_ = "";
       /**
        * <code>required string dest = 2;</code>
        *
@@ -771,15 +771,15 @@ public final class Chat {
        *消息目标的userid
        * </pre>
        */
-      public String getDest() {
-        Object ref = dest_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref)
+      public java.lang.String getDest() {
+        java.lang.Object ref = dest_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
               .toStringUtf8();
           dest_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -791,11 +791,11 @@ public final class Chat {
        */
       public com.google.protobuf.ByteString
           getDestBytes() {
-        Object ref = dest_;
+        java.lang.Object ref = dest_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           dest_ = b;
           return b;
         } else {
@@ -810,7 +810,7 @@ public final class Chat {
        * </pre>
        */
       public Builder setDest(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -851,7 +851,7 @@ public final class Chat {
       }
 
       // required string content = 3;
-      private Object content_ = "";
+      private java.lang.Object content_ = "";
       /**
        * <code>required string content = 3;</code>
        *
@@ -869,15 +869,15 @@ public final class Chat {
        *消息内容
        * </pre>
        */
-      public String getContent() {
-        Object ref = content_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref)
+      public java.lang.String getContent() {
+        java.lang.Object ref = content_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
               .toStringUtf8();
           content_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -889,11 +889,11 @@ public final class Chat {
        */
       public com.google.protobuf.ByteString
           getContentBytes() {
-        Object ref = content_;
+        java.lang.Object ref = content_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           content_ = b;
           return b;
         } else {
@@ -908,7 +908,7 @@ public final class Chat {
        * </pre>
        */
       public Builder setContent(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -970,7 +970,7 @@ public final class Chat {
     /**
      * <code>required string content = 1;</code>
      */
-    String getContent();
+    java.lang.String getContent();
     /**
      * <code>required string content = 1;</code>
      */
@@ -1000,7 +1000,7 @@ public final class Chat {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -1067,7 +1067,7 @@ public final class Chat {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<SPrivateChat> getParserForType() {
       return PARSER;
     }
@@ -1075,7 +1075,7 @@ public final class Chat {
     private int bitField0_;
     // required string content = 1;
     public static final int CONTENT_FIELD_NUMBER = 1;
-    private Object content_;
+    private java.lang.Object content_;
     /**
      * <code>required string content = 1;</code>
      */
@@ -1085,14 +1085,14 @@ public final class Chat {
     /**
      * <code>required string content = 1;</code>
      */
-    public String getContent() {
-      Object ref = content_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getContent() {
+      java.lang.Object ref = content_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
+        com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           content_ = s;
         }
@@ -1104,11 +1104,11 @@ public final class Chat {
      */
     public com.google.protobuf.ByteString
         getContentBytes() {
-      Object ref = content_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
+      java.lang.Object ref = content_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         content_ = b;
         return b;
       } else {
@@ -1157,8 +1157,8 @@ public final class Chat {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
@@ -1223,7 +1223,7 @@ public final class Chat {
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -1328,7 +1328,7 @@ public final class Chat {
 
       public final boolean isInitialized() {
         if (!hasContent()) {
-
+          
           return false;
         }
         return true;
@@ -1354,7 +1354,7 @@ public final class Chat {
       private int bitField0_;
 
       // required string content = 1;
-      private Object content_ = "";
+      private java.lang.Object content_ = "";
       /**
        * <code>required string content = 1;</code>
        */
@@ -1364,15 +1364,15 @@ public final class Chat {
       /**
        * <code>required string content = 1;</code>
        */
-      public String getContent() {
-        Object ref = content_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref)
+      public java.lang.String getContent() {
+        java.lang.Object ref = content_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
               .toStringUtf8();
           content_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -1380,11 +1380,11 @@ public final class Chat {
        */
       public com.google.protobuf.ByteString
           getContentBytes() {
-        Object ref = content_;
+        java.lang.Object ref = content_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           content_ = b;
           return b;
         } else {
@@ -1395,7 +1395,7 @@ public final class Chat {
        * <code>required string content = 1;</code>
        */
       public Builder setContent(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1456,7 +1456,7 @@ public final class Chat {
   private static com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\022cli_def/chat.proto\";\n\014CPrivateChat\022\014\n\004" +
       "self\030\001 \002(\t\022\014\n\004dest\030\002 \002(\t\022\017\n\007content\030\003 \002(" +
       "\t\"\037\n\014SPrivateChat\022\017\n\007content\030\001 \002(\tB&\n\036pr" +
@@ -1472,13 +1472,13 @@ public final class Chat {
           internal_static_CPrivateChat_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_CPrivateChat_descriptor,
-              new String[] { "Self", "Dest", "Content", });
+              new java.lang.String[] { "Self", "Dest", "Content", });
           internal_static_SPrivateChat_descriptor =
             getDescriptor().getMessageTypes().get(1);
           internal_static_SPrivateChat_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_SPrivateChat_descriptor,
-              new String[] { "Content", });
+              new java.lang.String[] { "Content", });
           return null;
         }
       };

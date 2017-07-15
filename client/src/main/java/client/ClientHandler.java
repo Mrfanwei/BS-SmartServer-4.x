@@ -98,10 +98,10 @@ public class ClientHandler extends SimpleChannelInboundHandler<Message> {
         }
 
         //这样设置的原因是，防止两方都阻塞在输入上
-        if(_verify) {
-            sendMessage();
-            Thread.sleep(Client.frequency);
-        }
+//        if(_verify) {
+//            sendMessage();
+//            Thread.sleep(Client.frequency);
+//        }
     }
 
     void sendMessage() {

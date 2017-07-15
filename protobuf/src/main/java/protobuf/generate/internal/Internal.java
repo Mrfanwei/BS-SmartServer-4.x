@@ -91,7 +91,7 @@ public final class Internal {
     public static Dest valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
-        throw new IllegalArgumentException(
+        throw new java.lang.IllegalArgumentException(
           "EnumValueDescriptor is not for this type.");
       }
       return VALUES[desc.getIndex()];
@@ -139,7 +139,7 @@ public final class Internal {
     /**
      * <code>required string userId = 3;</code>
      */
-    String getUserId();
+    java.lang.String getUserId();
     /**
      * <code>required string userId = 3;</code>
      */
@@ -193,7 +193,7 @@ public final class Internal {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -286,7 +286,7 @@ public final class Internal {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<GTransfer> getParserForType() {
       return PARSER;
     }
@@ -326,7 +326,7 @@ public final class Internal {
 
     // required string userId = 3;
     public static final int USERID_FIELD_NUMBER = 3;
-    private Object userId_;
+    private java.lang.Object userId_;
     /**
      * <code>required string userId = 3;</code>
      */
@@ -336,14 +336,14 @@ public final class Internal {
     /**
      * <code>required string userId = 3;</code>
      */
-    public String getUserId() {
-      Object ref = userId_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getUserId() {
+      java.lang.Object ref = userId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs =
+        com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           userId_ = s;
         }
@@ -355,11 +355,11 @@ public final class Internal {
      */
     public com.google.protobuf.ByteString
         getUserIdBytes() {
-      Object ref = userId_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b =
+      java.lang.Object ref = userId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         userId_ = b;
         return b;
       } else {
@@ -484,8 +484,8 @@ public final class Internal {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
@@ -550,7 +550,7 @@ public final class Internal {
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -695,19 +695,19 @@ public final class Internal {
 
       public final boolean isInitialized() {
         if (!hasDest()) {
-
+          
           return false;
         }
         if (!hasUserId()) {
-
+          
           return false;
         }
         if (!hasPtoNum()) {
-
+          
           return false;
         }
         if (!hasMsg()) {
-
+          
           return false;
         }
         return true;
@@ -802,7 +802,7 @@ public final class Internal {
       }
 
       // required string userId = 3;
-      private Object userId_ = "";
+      private java.lang.Object userId_ = "";
       /**
        * <code>required string userId = 3;</code>
        */
@@ -812,15 +812,15 @@ public final class Internal {
       /**
        * <code>required string userId = 3;</code>
        */
-      public String getUserId() {
-        Object ref = userId_;
-        if (!(ref instanceof String)) {
-          String s = ((com.google.protobuf.ByteString) ref)
+      public java.lang.String getUserId() {
+        java.lang.Object ref = userId_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
               .toStringUtf8();
           userId_ = s;
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -828,11 +828,11 @@ public final class Internal {
        */
       public com.google.protobuf.ByteString
           getUserIdBytes() {
-        Object ref = userId_;
+        java.lang.Object ref = userId_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
+          com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           userId_ = b;
           return b;
         } else {
@@ -843,7 +843,7 @@ public final class Internal {
        * <code>required string userId = 3;</code>
        */
       public Builder setUserId(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -995,7 +995,7 @@ public final class Internal {
     }
 
     private final com.google.protobuf.UnknownFieldSet unknownFields;
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
         getUnknownFields() {
       return this.unknownFields;
@@ -1068,7 +1068,7 @@ public final class Internal {
       }
     };
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Greet> getParserForType() {
       return PARSER;
     }
@@ -1147,7 +1147,7 @@ public final class Internal {
       public static From valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
         if (desc.getType() != getDescriptor()) {
-          throw new IllegalArgumentException(
+          throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
         return VALUES[desc.getIndex()];
@@ -1222,8 +1222,8 @@ public final class Internal {
     }
 
     private static final long serialVersionUID = 0L;
-    @Override
-    protected Object writeReplace()
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
         throws java.io.ObjectStreamException {
       return super.writeReplace();
     }
@@ -1288,7 +1288,7 @@ public final class Internal {
     }
     public Builder toBuilder() { return newBuilder(this); }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessage.BuilderParent parent) {
       Builder builder = new Builder(parent);
@@ -1395,7 +1395,7 @@ public final class Internal {
 
       public final boolean isInitialized() {
         if (!hasFrom()) {
-
+          
           return false;
         }
         return true;
@@ -1485,7 +1485,7 @@ public final class Internal {
   private static com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\033internal_def/internal.proto\"\\\n\tGTransf" +
       "er\022\023\n\004dest\030\001 \002(\0162\005.Dest\022\r\n\005netId\030\002 \001(\004\022\016" +
       "\n\006userId\030\003 \002(\t\022\016\n\006ptoNum\030\004 \002(\r\022\013\n\003msg\030\005 " +
@@ -1505,13 +1505,13 @@ public final class Internal {
           internal_static_GTransfer_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_GTransfer_descriptor,
-              new String[] { "Dest", "NetId", "UserId", "PtoNum", "Msg", });
+              new java.lang.String[] { "Dest", "NetId", "UserId", "PtoNum", "Msg", });
           internal_static_Greet_descriptor =
             getDescriptor().getMessageTypes().get(1);
           internal_static_Greet_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_Greet_descriptor,
-              new String[] { "From", });
+              new java.lang.String[] { "From", });
           return null;
         }
       };
