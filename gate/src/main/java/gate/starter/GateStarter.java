@@ -2,6 +2,7 @@ package gate.starter;
 import gate.GateAuthConnection;
 import gate.GateLogicConnection;
 import gate.GateServer;
+import gate.constants.GateConstant;
 import org.apache.commons.cli.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,8 +30,27 @@ public class GateStarter {
 
     public static void main(String[] args) throws Exception {
 
-        configureAndStart(args);
+        //configureAndStart(args);
+        configureStart();
 
+    }
+
+    static void configureStart(){
+
+        gateId = GateConstant.GATE_VALUE;
+        int gateListenPort = GateConstant.GATE_PORT;
+
+        String authIP = GateConstant.AUTH_IP;
+        int authPort = GateConstant.AUTH_PORT;
+
+        String logicIP = GateConstant.LOGIC_IP;
+        int logicPort = GateConstant.LOGIC_PORT;
+        //Now Start Servers
+        new Thread(() -> GateServer.startGateServer(gateListenPort)).start();
+
+        new Thread(() -> GateAuthConnection.startGateAuthConnection(authIP, authPort)).start();
+
+        new Thread(() -> GateLogicConnection.startGateLogicConnection(logicIP, logicPort)).start();
     }
 
     static void configureAndStart(String[] args) throws ParseException {

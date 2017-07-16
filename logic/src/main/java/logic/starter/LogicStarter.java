@@ -5,6 +5,7 @@ package logic.starter;
  */
 
 import logic.LogicServer;
+import logic.constants.LogicConstant;
 import org.apache.commons.cli.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,8 +37,24 @@ public class LogicStarter {
 
     public static void main(String[] args) throws Exception {
 
-        configureAndStart(args);
+        //configureAndStart(args);
+        configureStart();
 
+    }
+
+    static void configureStart(){
+        int logicListenPort = LogicConstant.LOGIC_PORT;
+        logic.Worker.startWorker(LogicConstant.LOGIC_WORK_NUM);
+
+        _redisPoolManager = new RedisPoolManager();
+        _redisPoolManager.REDIS_SERVER = LogicConstant.REDIS_IP;
+        _redisPoolManager.REDIS_PORT = LogicConstant.REDIS_PORT;
+
+        _redisPoolManager.returnJedis(_redisPoolManager.getJedis());
+        logger.info("Redis init successed");
+
+        //Now Start Servers
+        new Thread(() -> LogicServer.startLogicServer(logicListenPort)).start();
     }
 
     static void configureAndStart(String[] args) throws ParseException {

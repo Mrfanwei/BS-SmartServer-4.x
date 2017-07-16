@@ -12,6 +12,7 @@
         <module name="gate" />
         <module name="logic" />
         <module name="protobuf" />
+        <module name="qintin" />
         <module name="thirdparty" />
       </profile>
     </annotationProcessing>
@@ -22,6 +23,7 @@
       <module name="gate" target="1.8" />
       <module name="logic" target="1.8" />
       <module name="protobuf" target="1.8" />
+      <module name="qintin" target="1.8" />
       <module name="smartlife" target="1.8" />
       <module name="thirdparty" target="1.8" />
     </bytecodeTargetLevel>

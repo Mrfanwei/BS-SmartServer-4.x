@@ -2,6 +2,7 @@ package auth.starter;
 
 import auth.AuthLogicConnection;
 import auth.AuthServer;
+import auth.constants.AuthConstants;
 import org.apache.commons.cli.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,7 +33,30 @@ public class    AuthStarter {
 
     public static void main(String[] args) throws Exception {
 
-        configureAndStart(args);
+        //configureAndStart(args);
+        configureStart();
+    }
+
+    static void configureStart(){
+
+        int authListenPort = AuthConstants.AUTH_PORT;
+        workNum = AuthConstants.AUTH_WORK_NUM;
+        auth.Worker.startWorker(workNum);
+        logger.info("Authserver authListenPort " + authListenPort);
+
+        _redisPoolManager = new RedisPoolManager();
+        _redisPoolManager.REDIS_SERVER = AuthConstants.REDIS_IP;
+        _redisPoolManager.REDIS_PORT = AuthConstants.REDIS_PORT;
+
+        _redisPoolManager.returnJedis(_redisPoolManager.getJedis());
+        logger.info("Redis init successed");
+
+        String logicIp = AuthConstants.LOGIC_IP;
+        int logicPort = AuthConstants.LOGIC_PORT;
+
+        new Thread(() -> AuthServer.startAuthServer(authListenPort)).start();
+
+        new Thread(() -> AuthLogicConnection.startAuthLogicConnection(logicIp, logicPort)).start();
     }
 
     static void configureAndStart(String[] args) throws ParseException {
