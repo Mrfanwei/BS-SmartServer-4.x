@@ -39,7 +39,6 @@ public class LogicStarter {
 
         //configureAndStart(args);
         configureStart();
-
     }
 
     static void configureStart(){
@@ -53,7 +52,6 @@ public class LogicStarter {
         _redisPoolManager.returnJedis(_redisPoolManager.getJedis());
         logger.info("Redis init successed");
 
-        //Now Start Servers
         new Thread(() -> LogicServer.startLogicServer(logicListenPort)).start();
     }
 
