@@ -13,7 +13,7 @@ public class GateConstant {
 
     public static final String AUTH_IP = "127.0.0.1";
 
-    public static final int AUTH_PORT = 8080;
+    public static final int AUTH_PORT = 7071;
 
     public static final String LOGIC_IP = "127.0.0.1";
 
