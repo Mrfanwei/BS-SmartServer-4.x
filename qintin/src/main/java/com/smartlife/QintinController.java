@@ -55,6 +55,15 @@ public class QintinController {
         return qintinService.getMusicInfo(phonename);
     }
 
+    @RequestMapping(value="/unBindRobot",
+            method= RequestMethod.POST,
+            produces="application/json")
+    public int unBindRobot(@RequestParam("phoneid") String phoneid,@RequestParam("robotname") String robotname) {
+        System.out.print(TAG+" unBindRobot phoneid="+phoneid+" robotname"+robotname+"\n");
+        qintinService.unBindRobot(phoneid,robotname);
+        return 0;
+    }
+
     @RequestMapping(value="/getRobotInfo",
             method= RequestMethod.POST,
             produces="application/json")

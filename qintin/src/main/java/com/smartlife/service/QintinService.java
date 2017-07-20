@@ -17,6 +17,8 @@ public interface QintinService {
 
     List<MusicInfoModel> getMusicInfo(String phonename);
 
+    int unBindRobot( String phonename,String robotname);
+
     RobotModel getRobotInfo(String phoneid);
 
     int insertRobotData(String phoneid, String address, String robotname,

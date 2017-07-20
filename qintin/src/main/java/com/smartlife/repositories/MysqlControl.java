@@ -29,6 +29,9 @@ public interface MysqlControl {
     @Select("select * from "+MUSICDATA_TABLE+" where phone = #{phonename}")
     List<MusicInfoModel> getMusicInfo(@Param("phonename") String phonename);
 
+    @Delete(" delete from "+ROBOT_TABLE+" where phoneid = #{phoneid} and robotname = #{robotname}")
+    void unBindRobot(@Param("phoneid") String phoneid,@Param("robotname") String robotname);
+
     @Select("select * from "+ROBOT_TABLE+" where phoneid = #{phoneid}")
     List<RobotModel.DataBean> getRobotInfo(@Param("phoneid") String phoneid);
 

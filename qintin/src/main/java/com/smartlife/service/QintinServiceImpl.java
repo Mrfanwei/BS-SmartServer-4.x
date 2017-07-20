@@ -52,6 +52,13 @@ public class QintinServiceImpl implements QintinService{
         return mysqlControl.getMusicInfo(phonename);
     }
 
+    @Override
+    public int unBindRobot( String phonename,String robotname) {
+        System.out.print("unBindRobot phoneid="+phonename+" robotname"+robotname+"\n");
+        mysqlControl.unBindRobot(phonename,robotname);
+        return 0;
+    }
+
     @Transactional(readOnly=true)
     @Override
     public RobotModel getRobotInfo(String phoneid) {
