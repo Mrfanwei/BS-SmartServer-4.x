@@ -98,10 +98,10 @@ public class ClientHandler extends SimpleChannelInboundHandler<Message> {
         }
 
         //这样设置的原因是，防止两方都阻塞在输入上
-//        if(_verify) {
-//            sendMessage();
-//            Thread.sleep(Client.frequency);
-//        }
+        if(_verify) {
+            sendMessage();
+            Thread.sleep(Client.frequency);
+        }
     }
 
     void sendMessage() {
@@ -109,7 +109,7 @@ public class ClientHandler extends SimpleChannelInboundHandler<Message> {
 //        Scanner sc = new Scanner(System.in);
 //        String content = sc.nextLine();
         String content = "Hello, I am Tom!";
-//        logger.info("{} Send Message: {} to {}", _userId, content, _friend);
+        logger.info("{} Send Message: {}", _userId, content);
 
         Chat.CPrivateChat.Builder cp = Chat.CPrivateChat.newBuilder();
         cp.setContent(content);
@@ -129,6 +129,7 @@ public class ClientHandler extends SimpleChannelInboundHandler<Message> {
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {
         // Close the connection when an exception is raised.
         cause.printStackTrace();
+        logger.info("exceptionCaught");
         ctx.close();
     }
 }

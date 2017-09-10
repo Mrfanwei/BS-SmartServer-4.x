@@ -16,7 +16,8 @@ import protobuf.code.PacketEncoder;
  * Simple client for module test
  */
 public class Client {
-    static final String HOST = System.getProperty("host", "127.0.0.1");
+    static final String HOST = System.getProperty("host", "112.74.175.96");
+//    static final String HOST = System.getProperty("host", "127.0.0.1");
     static final int PORT = Integer.parseInt(System.getProperty("port", "9090"));
     public static final int clientNum = Integer.parseInt(System.getProperty("size", "10"));
     public static final int frequency = 100;  //ms
@@ -45,10 +46,11 @@ public class Client {
                 });
 
         // Start the client.
-//        for(int i = 1; i <= clientNum; i++) {
-//            startConnection(b, i);
-//        }
-        startConnection(b, 1);
+        for(int i = 1; i <= clientNum; i++) {
+//        for(int i = 1; i <= 10; i++) {
+            startConnection(b, i);
+        }
+
     }
 
     private static void startConnection(Bootstrap b, int index) {

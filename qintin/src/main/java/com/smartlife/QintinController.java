@@ -76,8 +76,9 @@ public class QintinController {
             produces="application/json")
     public int insertRobotData(@RequestParam("phoneid") String phoneid, @RequestParam("address") String address,
                                @RequestParam("robotname") String robotname, @RequestParam("robot_serial") String robot_serial,
-                               @RequestParam("robotid")int robotid, @RequestParam("online")boolean online){
-        qintinService.insertRobotData(phoneid,address, robotname,robot_serial,robotid,online);
+                               @RequestParam("robotid")String robotid, @RequestParam("online")String online){
+        //qintinService.insertRobotData(phoneid,address, robotname,robot_serial,robotid,online);
+        System.out.print(TAG+"insertRobotData ="+phoneid);
         return 0;
     }
 
