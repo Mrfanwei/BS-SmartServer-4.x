@@ -74,11 +74,9 @@ public class QintinController {
     @RequestMapping(value="/insertRobotData",
             method= RequestMethod.POST,
             produces="application/json")
-    public int insertRobotData(@RequestParam("phoneid") String phoneid, @RequestParam("address") String address,
-                               @RequestParam("robotname") String robotname, @RequestParam("robot_serial") String robot_serial,
-                               @RequestParam("robotid")String robotid, @RequestParam("online")String online){
-        //qintinService.insertRobotData(phoneid,address, robotname,robot_serial,robotid,online);
-        System.out.print(TAG+"insertRobotData ="+phoneid);
+    public int bindRobot(@RequestParam("phoneid") String phoneid, @RequestParam("address") String address,
+                               @RequestParam("robotname") String robotname, @RequestParam("robot_serial") String robot_serial){
+        qintinService.insertRobotData(phoneid,address, robotname,robot_serial,111,true);
         return 0;
     }
 
